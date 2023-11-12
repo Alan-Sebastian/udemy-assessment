@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>watch</title>
+</head>
+<style>
+.nav{
+    background-color: rgb(8, 8, 102);
+    height:50px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+h1{
+    color:white;
+    text-align: center;
+    font-family:Montserrat Source Sans Pro;
+}
+.img{
+    float: left;
+}
+.im{
+    display: flex;
+    flex-direction: row;
+    z-index: -9;
+}
+.content{
+   float:right;
+   margin-top: 100px;
+   font-family:Montserrat Source Sans Pro;
+}
+.time{
+    color: rgb(228, 239, 240);
+    font-size: 40px;
+    position: absolute;
+  top: 40%;
+  left: 11%;
+}
+#red{
+    padding: 10px;
+    width: 100px;
+    background-color:#ca3d22;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-color: rgb(220, 104, 9);
+    border-radius: 10PX;
+    height: 50PX;
+    margin-top: 50px;
+}
+ #black{
+    padding: 10px;
+    width: 100px;
+    background-color:#23211f;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-color: #23211f;
+    border-radius: 10PX;
+    height: 50PX;
+}
+#blue{
+    padding: 10px;
+    width: 100px;
+    height: 50PX;
+    background-color:#565681;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-color:#565681;
+    border-radius: 10PX;
+}
+#purple{
+    padding: 10px;
+    width: 100px;
+    background-color:#8a5362;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-color: 8a5362;
+    border-radius: 10PX;
+    height: 50PX;
+}
+#pink{
+    padding: 10px;
+    width: 100px;
+    background-color:- #e9c7be;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-color: #e9c7be;
+    border-radius: 10PX;
+    height: 50PX;
+} 
+</style>
+<body>
+    <div class="nav">
+<h1>WatchKart</h1>
+    </div>
+    <div class="img">
+        <img id="im" src="https://i.imgur.com/iOeUBV7.png" width="500px">
+        <div class="time">
+            <span id="hours">00</span><span>:</span>
+            <span id="minutes">00</span><span>:</span>
+            <span id="seconds">00</span>
+    </div>
+   
+        <div class="content">
+            <h2>Smart Watch</h2>
+        <p>A smartwatch is a portable device worn on the wrist that supports apps and acts as an extension of your mobile phone in some cases.</p>
+            <button id="red" onclick="red()">Red</button>
+       <button id="black" onclick="black()">black</button>
+        <button id="blue" onclick="blue()">blue</button>
+        <button id="pink" onclick="pink()">pink</button>
+        <button id="purple" onclick="purple()">purple</button> 
+    </div>  
+    <script src="watch.js"></script>
+</body>
+</html>
